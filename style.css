@@ -1,6 +1,14 @@
+:root {
+    --primary-text: orange;
+    --bg-color: black;
+}
+
 body {
     margin: 0;
-    background-color: black;
+    background-color: var(--bg-color);
+    font-family: 'Inter', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .navbar {
@@ -12,14 +20,14 @@ body {
     color: white;
 }
 
-.navbar > nav > a {
-    padding: 0 10px; 
-    color: white; 
-    text-transform: uppercase; 
+.navbar>nav>a {
+    padding: 0 10px;
+    color: white;
+    text-transform: uppercase;
     text-decoration: none;
 }
 
-.navbar > nav > a:hover {
+.navbar>nav>a:hover {
     color: palevioletred;
     border-bottom: 1px palevioletred dotted;
 }
@@ -39,31 +47,31 @@ article::after {
     border: 3px palevioletred solid;
 }
 
-.article-author{
-    color: darkgrey; 
-    font-weight: bold; 
+.article-author {
+    color: darkgrey;
+    font-weight: bold;
     font-size: smaller;
 }
 
 .article-title {
-    color: limegreen; 
-    font-size: 48px; 
+    color: var(--primary-text);
+    font-size: 48px;
     font-weight: 900;
 }
 
 .planet {
-    width:100%; 
-    max-height: 250px; 
+    width: 100%;
+    max-height: 250px;
     object-fit: cover;
 }
 
-article > section {
+article>section {
     text-align: justify;
     padding: 0 20px;
-    color: limegreen; 
+    color: limegreen;
     font-size: 24px;
 }
 
-article > section > p:first-child {
+article>section>p:first-child {
     text-indent: 80px
 }
